@@ -1,0 +1,33 @@
+.wrap {
+  display: grid;
+  grid-template-areas: "hlavicka hlavicka" "menu obsah" "paticka paticka";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 100px 1fr 100px;
+  max-height: 800px;
+  margin: 0 auto;
+}
+header {
+  grid-area: hlavicka;
+  background-color: #e76d83;
+  padding: 2rem;
+}
+aside {
+  grid-area: menu;
+  background-color: #32cbff;
+  height: 100vh;
+  padding: 2rem;
+}
+section {
+  grid-area: obsah;
+  background-color: #afe3c0;
+  height: 100vh;
+  padding: 2rem;
+}
+footer {
+  grid-area: paticka;
+  background-color: #c98ca7;
+  padding: 2rem;
+}
+body {
+  margin: 0;
+}
